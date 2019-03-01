@@ -1,0 +1,143 @@
+    1  ls
+    2  history
+    3  ls
+    4  man rm
+    5  rm data_file1.dat
+    6  ls
+    7  cd CIT173_Lab5/
+    8  ls
+    9  cat my-fstab.txt
+   10  dd if=/dev/random of=/mnt/data  bs=1024
+   11  dd if=/dev/random of=/mnt/data/data_file1.dat bs=1024
+   12  sudo dd if=/dev/random of=/mnt/data/data_file1.dat bs=1024
+   13  ls
+   14  cd
+   15  ls
+   16  cd /mnt/data
+   17  ls
+   18  rm data_file1.dat 
+   19  cd
+   20  cd /mnt/data
+   21  sudo rm data_file1.dat 
+   22  sudo dd if=/dev/random of=/mnt/data/data_file1.dat bs=1024
+   23  man find
+   24  man cpio
+   25  mkdir CIT173_Lab6
+   26  sudo groupadd actors
+   27  sudo groupadd directors
+   28  sudo groupadd producers
+   29  sudo useradd -m mhamill
+   30  sudo passwd mhamill luke
+   31  sudo passwd mhamill
+   32  sudo usermod -c "Mark Hamill" mhamill
+   33  sudo usermod  -c -G actors mhamill
+   34  sudo usermod -c -G actors mhamill
+   35  sudo useradd -m hford
+   36  sudo passwd hford
+   37  sudo usermod -c "Harrison Ford" hford
+   38  sudo usermod -c -G actors hford
+   39  sudo useradd -m cfisher
+   40  sudo passwd cfisher
+   41  sudo usermod -c "Carrie Fisher" cfisher
+   42  sudo usermod -c -G actors cfisher
+   43  sudo useradd -m glucas
+   44  sudo passwd glucas
+   45  sudo usermod -c "George Lucas" glucas
+   46  sudo usermod -c -G directors glucas
+   47  sudo usermod -c -G producers glucas
+   48  sudo useradd -m gkurtz
+   49  sudo passwd gkurtz
+   50  sudo usermod -c -G producers gkurtz
+   51  cat /etc/passwd
+   52  cp /etc/passwd ~/CIT173_Lab6
+   53  cat /etc/group
+   54  cp /etc/group ~/CIT173_Lab6
+   55  ls /etc
+   56  cat /etc/group
+   57  sudo usermod -c -G producers gkurtz
+   58  cat /etc/group
+   59  mand usermod
+   60  man usermod
+   61  sudo usermod -a -G producers gkurtz
+   62  cat /etc/group
+   63  sudo usermod -a -G producers glucas
+   64  cat /etc/group
+   65  sudo usermod -a -G directors glucas
+   66  sudo usermod -a -G actors hford
+   67  sudo usermod -a -G actors mhamill
+   68  sudo usermod -a -G actors cfisher
+   69  cat /etc/group
+   70  cp /etc/group ~/CIT173_Lab6
+   71  ls /etc
+   72  ls
+   73  cd CIT173_Lab6
+   74  ls
+   75  ls -al ~/CIT173_Lab6
+   76  history > ~/CIT173_Lab6/ex1-command-history.txt
+   77  ls -al ~/CIT173_Lab6
+   78  wget https://github.com/RenoTechnologyAcademy/CIT173_Lab6_Files/archive/master.tar.gz
+   79  ls
+   80  cd
+   81  cd CIT173_Lab6
+   82  tar -xvzf master.tar.gz
+   83  ls
+   84  cd CIT173_Lab6_Files-master/
+   85  ls
+   86  cd
+   87  cd /var
+   88  mkdir StarWars
+   89  sudo mkdir StarWars
+   90  ls
+   91  sudo mkdir /StarWars/finance
+   92  cd StarWars
+   93  sudo mkdir finance
+   94  ls
+   95  sudo mkdir directing
+   96  sudo mkdir creative
+   97  ls
+   98  sudo chmod 777 /var/StarWars/
+   99  ls
+  100  cd
+  101  cd CIT173_Lab6
+  102  ls
+  103  cd CIT173_Lab6_Files-master/
+  104  man mv
+  105  ls
+  106  mv star-wars-budget.txt /var/StarWars/finance
+  107  sudo chmod 777 *
+  108  mv star-wars-budget.txt /var/StarWars/finance
+  109  cd /var
+  110  sudo chmod 777 *
+  111  cd StarWars
+  112  sudo chmod 777 *
+  113  cd
+  114  ls
+  115  cd CIT173_Lab6
+  116  ls
+  117  cd CIT173_Lab6_Files-master/
+  118  mv star-wars-budget.txt /var/StarWars/finance
+  119  mv star-wars-journal.txt /var/StarWars/directing
+  120  mv star-wars-script.txt /var/StarWars/creative
+  121  ls
+  122  cd
+  123  ls
+  124  cd var
+  125  cd /var
+  126  ls
+  127  cd StarWars
+  128  ls -all
+  129  sudo chown -R gkurtz:producers finance/
+  130  ls
+  131  ls -all
+  132  sudo chmod -R 750 finance/
+  133  ls -all
+  134  sudo chmod -R glucas:directors directing/
+  135  sudo chown -R glucas:directors directing/
+  136  ls
+  137  ls -all
+  138  sudo chmod -R 755 directing/
+  139  ls -all
+  140  sudo chown -R glucas:actors creative/
+  141  sudo chmod -R 750 creative/
+  142  ls -all
+  143  history > ~/CIT173_Lab6/ex2-command-history.txt
